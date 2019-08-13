@@ -1,95 +1,95 @@
- (function(modules) { // webpackBootstrap
- 	// The module cache
- 	var installedModules = {};
-
- 	// The require function
- 	function __webpack_require__(moduleId) {
-
- 		// Check if module is in cache
- 		if(installedModules[moduleId]) {
- 			return installedModules[moduleId].exports;
- 		}
- 		// Create a new module (and put it into the cache)
- 		var module = installedModules[moduleId] = {
- 			i: moduleId,
- 			l: false,
- 			exports: {}
- 		};
-
- 		// Execute the module function
- 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-
- 		// Flag the module as loaded
- 		module.l = true;
-
- 		// Return the exports of the module
- 		return module.exports;
- 	}
-
-
- 	// expose the modules object (__webpack_modules__)
- 	__webpack_require__.m = modules;
-
- 	// expose the module cache
- 	__webpack_require__.c = installedModules;
-
- 	// define getter function for harmony exports
- 	__webpack_require__.d = function(exports, name, getter) {
- 		if(!__webpack_require__.o(exports, name)) {
- 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
- 		}
- 	};
-
- 	// define __esModule on exports
- 	__webpack_require__.r = function(exports) {
- 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
- 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
- 		}
- 		Object.defineProperty(exports, '__esModule', { value: true });
- 	};
-
- 	// create a fake namespace object
- 	// mode & 1: value is a module id, require it
- 	// mode & 2: merge all properties of value into the ns
- 	// mode & 4: return value when already ns object
- 	// mode & 8|1: behave like require
- 	__webpack_require__.t = function(value, mode) {
- 		if(mode & 1) value = __webpack_require__(value);
- 		if(mode & 8) return value;
- 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
- 		var ns = Object.create(null);
- 		__webpack_require__.r(ns);
- 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
- 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
- 		return ns;
- 	};
-
- 	// getDefaultExport function for compatibility with non-harmony modules
- 	__webpack_require__.n = function(module) {
- 		var getter = module && module.__esModule ?
- 			function getDefault() { return module['default']; } :
- 			function getModuleExports() { return module; };
- 		__webpack_require__.d(getter, 'a', getter);
- 		return getter;
- 	};
-
- 	// Object.prototype.hasOwnProperty.call
- 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-
- 	// __webpack_public_path__
- 	__webpack_require__.p = "";
-
-
- 	// Load entry module and return exports
- 	return __webpack_require__(__webpack_require__.s = "./decorator.js");
- })
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = "./modules/mobx-demo.js");
+/******/ })
 /************************************************************************/
- ({
+/******/ ({
 
-/***/ "./decorator.js":
-/*!**********************!*\
-  !*** ./decorator.js ***!
-  \**********************/
+/***/ "./modules/mobx-demo.js":
+/*!******************************!*\
+  !*** ./modules/mobx-demo.js ***!
+  \******************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -100,22 +100,27 @@ var _class, _descriptor, _temp;
 
 function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 function _applyDecoratedDescriptor(target, property, decorators, descriptor, context) { var desc = {}; Object.keys(descriptor).forEach(function (key) { desc[key] = descriptor[key]; }); desc.enumerable = !!desc.enumerable; desc.configurable = !!desc.configurable; if ('value' in desc || desc.initializer) { desc.writable = true; } desc = decorators.slice().reverse().reduce(function (desc, decorator) { return decorator(target, property, desc) || desc; }, desc); if (context && desc.initializer !== void 0) { desc.value = desc.initializer ? desc.initializer.call(context) : void 0; desc.initializer = undefined; } if (desc.initializer === void 0) { Object.defineProperty(target, property, desc); desc = null; } return desc; }
 
 function _initializerWarningHelper(descriptor, context) { throw new Error('Decorating class property failed. Please ensure that ' + 'proposal-class-properties is enabled and set to use loose mode. ' + 'To use proposal-class-properties in spec mode with decorators, wait for ' + 'the next major version of decorators in stage 2.'); }
 
 
-let Animal = (_class = (_temp = class Animal {
-  constructor() {
-    _initializerDefineProperty(this, "name", _descriptor, this);
-  }
+var Animal = (_class = (_temp = function Animal() {
+  _classCallCheck(this, Animal);
 
-}, _temp), (_descriptor = _applyDecoratedDescriptor(_class.prototype, "name", [mobx__WEBPACK_IMPORTED_MODULE_0__["observable"]], {
+  _initializerDefineProperty(this, "type", _descriptor, this);
+}, _temp), (_descriptor = _applyDecoratedDescriptor(_class.prototype, "type", [mobx__WEBPACK_IMPORTED_MODULE_0__["observable"]], {
   configurable: true,
   enumerable: true,
   writable: true,
-  initializer: null
+  initializer: function initializer() {
+    return '小猫';
+  }
 })), _class);
+var animal = new Animal();
+console.log(animal);
 
 /***/ }),
 
@@ -618,7 +623,7 @@ function createDecoratorForEnhancer(enhancer) {
             : undefined;
         defineObservableProperty(target, propertyName, initialValue, enhancer);
     });
-    var res =
+    var res = 
     // Extra process checks, as this happens during module initialization
     typeof process !== "undefined" && process.env && "development" !== "production"
         ? function observableDecorator() {
@@ -1131,7 +1136,7 @@ var ComputedValue = /** @class */ (function () {
             });
         }
         var oldValue = this.value;
-        var wasSuspended =
+        var wasSuspended = 
         /* see #1208 */ this.dependenciesState === IDerivationState.NOT_TRACKING;
         var newValue = this.computeValue(true);
         var changed = wasSuspended ||
@@ -4908,5 +4913,5 @@ module.exports = function(originalModule) {
 
 /***/ })
 
- });
-//# sourceMappingURL=bundle.js.map
+/******/ });
+//# sourceMappingURL=mobx.js.map
