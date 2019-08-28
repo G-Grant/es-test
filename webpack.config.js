@@ -4,10 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: {
-        'mobx': './modules/mobx-demo.js',
-        'prototype': './modules/prototype.js'
-    },
+    entry: './modules/index.js',
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, 'dist')
